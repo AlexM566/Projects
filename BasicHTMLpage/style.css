@@ -1,0 +1,44 @@
+body{
+    border:2px solid black;
+    font-family: Calibri,  sans-serif;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:10px;
+}
+
+.catinca h5 {
+    font-size: 35px;
+    font-weight: 1px;
+    letter-spacing:normal;
+    border-top:3px solid black;
+    margin:40px 100px 5px 40px;
+    white-space: normal;
+    text-indent: 20px;
+    width: 30%;
+    position: relative;
+}
+
+.mini container{
+    position: absolute;
+    
+}
+
+p{
+    font-size: 16px;
+}
+.green{
+    color: rgb(58, 172, 58);
+    font-weight: 15px;
+    font-size: 14px;
+}
+
+.blue{
+    color:rgb(83, 83, 209);
+    font-size: 16px;
+}
+
+ul{
+    font-size: 16px;
+}
