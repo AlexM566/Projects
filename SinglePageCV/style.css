@@ -1,0 +1,147 @@
+body {
+    padding: 12px;
+    border: 2px solid black;
+    font-family: Raleway, sans-serif;
+   }
+navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none; /* Elimină punctele de la lista */
+    padding: 0; /* Elimină padding-ul implicit */
+    margin: 0; /* Elimină margin-ul implicit */
+}
+
+navbar ul li {
+    margin-left: 5px; /* Adaugă spațiu între elementele listei */
+}
+
+li a{
+    text-decoration: none; /* Elimină sublinierea de la link-uri */
+    color: black; /* Schimbă culoarea textului */
+    padding: 0px;
+}
+
+navbar li+li ::before{
+    content: "/";
+    padding: 5px;
+}
+
+navbar .name {
+   position: absolute;
+   top: 10px;
+}
+
+header h1{
+    text-align: center;
+    font-family: cursive
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    top:0;
+    bottom:0;
+    left:0;
+    padding: 0;
+    position: relative;
+}
+
+.projects{
+    box-sizing: border-box;
+    border: 3px solid black;
+   
+}
+
+a{
+    color: blue;
+}
+
+.section1, .section2, .section3, .section4, .section6{
+    border: 3px solid black;
+    border-bottom: 4px solid black;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: auto;
+    width:100%
+  
+}
+
+.experience, .education {
+    border: 3px solid black;
+    padding: 0;
+    margin: 0;
+    flex: 1; /* Ensures the elements take equal space */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+
+h4{
+    font-size: 25px;
+}
+
+.review1, .review2, .review3{
+    border:3px solid black;
+    border-radius: 35px;
+    word-wrap: break-word;
+    margin: 50px;
+    padding: 40px;
+}
+
+footer{
+    text-align: center;
+    font-size: 20px;
+    font-family: cursive;
+   
+}
+
+img{
+    height: 20px;
+    width:20px;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .container2 {
+        grid-template-columns: 1fr;
+    }
+    .section1, .section2, .section3, .section4, .section6 {
+        border: 3px solid black;
+        border-bottom: 4px solid black;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        max-height: auto;
+        width: 100%
+    }
+    .experience, .education {
+        border: 3px solid black;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+        box-sizing: border-box;
+    }
+    .projects {
+        box-sizing: border-box;
+        border: 3px solid black;
+    }
+    .review1, .review2, .review3 {
+        border: 3px solid black;
+        border-radius: 35px;
+        word-wrap: break-word;
+        margin: 50px;
+        padding: 40px;
+    }
+}
+
