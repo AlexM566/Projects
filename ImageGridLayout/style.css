@@ -1,0 +1,32 @@
+.img1, .img4, .img5 {
+    width: 220px;
+    height: 280px;
+}
+
+.img2, .img3, .img6 {
+    width: 220px;
+    height: 180px;
+}
+
+.img1, .img3, .img5{
+    grid-row-start: 1;
+    grid-row-end:2;
+}
+
+.img4 {
+    position: relative;
+    bottom: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 220px); /* Each column will have the same width */
+    grid-template-rows: repeat(3, 1fr); /* Each row will have the same height */
+    gap:5px;
+   margin: 0 auto;
+}
+
+.container img{
+    display: grid;
+    gap:0;
+}

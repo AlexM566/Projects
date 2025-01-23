@@ -1,0 +1,44 @@
+body, html{
+    background-color: #ffe99b;
+}
+
+
+
+header h1{
+    font-family: cursive;
+    text-align: center;
+    text-shadow: 4px 1px 0.5px rgba(0, 0, 0, 0.5); ;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.container img{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    border-radius: 5%;
+    margin:20px;
+}
+
+.left, .right {
+    opacity: 0; /* Inițial invizibile */
+    transform: translateX(-100%); /* Elemente `left` încep din stânga */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Tranziție lină */
+}
+
+.right {
+    transform: translateX(100%); /* Elemente `right` încep din dreapta */
+}
+
+.visible {
+    transform: translateX(0); /* Revin la poziția centrală */
+    opacity: 1; /* Devine vizibil */
+}
+
